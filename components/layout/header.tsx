@@ -13,10 +13,11 @@ export function Header() {
   const pathname = usePathname()
 
   const navItems = [
+    { name: "Home", href: "#home" },
+    { name: "Equipe", href: "#equipe" },
+    { name: "Projetos", href: "#projetos" },
     { name: "Serviços", href: "#servicos" },
     { name: "Processo", href: "#processo" },
-    { name: "Projetos", href: "#projetos" },
-    { name: "Equipe", href: "#equipe" },
     { name: "Contato", href: "#contato" },
   ]
 
