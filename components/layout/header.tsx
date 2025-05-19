@@ -60,9 +60,7 @@ export function Header() {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-[#595956] rounded-md flex items-center justify-center transition-transform hover:scale-105">
-                <span className="text-[#F2F2F0] font-bold">M</span>
-              </div>
+                <img src="/monq-logo.png" alt="MONQ Logo" className="w-8 h-8 rounded-full" />
               <span className="text-[#F2F2F0] font-medium">MONQ Software</span>
             </Link>
           </motion.div>

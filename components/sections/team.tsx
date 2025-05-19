@@ -31,28 +31,28 @@ const teamMembers = [
     description:
       "Especialista em arquiteturas escaláveis e soluções de alta performance com mais de 12 anos de experiência.",
     skills: ["Java", "AWS", "Microserviços"],
-    image: "/team/atila-almeida.png",
+    image: "/team/atila-almeida.jpg",
   },
   {
     name: "Gabriel Pontes",
     role: "Líder de Desenvolvimento Frontend",
     description: "Especializado na criação de interfaces modernas e responsivas com foco em experiência do usuário.",
     skills: ["React", "TypeScript", "UX/UI"],
-    image: "/team/gabriel-pontes.png",
+    image: "/team/gabriel-pontes.jpg",
   },
   {
     name: "Lucas Lima",
     role: "Especialista em IA e Machine Learning",
     description: "Desenvolve soluções inovadoras utilizando inteligência artificial e aprendizado de máquina.",
     skills: ["Python", "TensorFlow", "Computer Vision"],
-    image: "/team/lucas-lima.png",
+    image: "/team/lucas-lima.jpg",
   },
   {
     name: "Mauricio Menezes",
     role: "Líder de Desenvolvimento Backend",
     description: "Especialista em sistemas distribuídos e bancos de dados de alta performance.",
     skills: ["Node.js", "MongoDB", "Kubernetes"],
-    image: "/team/mauricio-menezes.png",
+    image: "/team/mauricio-menezes.jpg",
   },
 ]
 

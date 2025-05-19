@@ -4,7 +4,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Monq Software',
   description: 'Transformando Ideias em Histórias de Sucesso em Software',
-  generator: 'v0.dev',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
