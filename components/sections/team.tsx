@@ -27,49 +27,49 @@ const staggerContainer = {
 const teamMembers = [
   {
     name: "Atila Almeida",
-    linkedin: "https://linkedin.com/in/lucaslimacoder",
-    role: "Arquiteto de Software",
+    linkedin: "https://www.linkedin.com/in/atila-bezerra/",
+    role: "Líder de Integrações",
     description:
       "Especialista em arquiteturas escaláveis e soluções de alta performance com mais de 12 anos de experiência.",
     skills: ["Java", "AWS", "Microserviços"],
     image: "/team/atila-almeida.jpg",
   },
   {
-    linkedin: "https://linkedin.com/in/lucaslimacoder",
+    linkedin: "https://www.linkedin.com/in/gabpontes/",
     name: "Gabriel Pontes",
-    role: "Líder de Desenvolvimento Frontend",
-    description: "Especializado na criação de interfaces modernas e responsivas com foco em experiência do usuário.",
-    skills: ["React", "TypeScript", "UX/UI"],
+    role: "Líder de Desenvolvimento Backend",
+    description: "Especialista em sistemas distribuídos e bancos de dados de alta performance.",
+    skills: ["Node.js", "MongoDB", "Kubernetes"],
     image: "/team/gabriel-pontes.jpg",
   },
   {
     linkedin: "https://linkedin.com/in/lucaslimacoder",
     name: "Lucas Lima",
-    role: "Especialista em IA e Machine Learning",
-    description: "Desenvolve soluções inovadoras utilizando inteligência artificial e aprendizado de máquina.",
-    skills: ["Python", "TensorFlow", "Computer Vision"],
+    role: "Líder de Desenvolvimento Frontend",
+    description: "Especializado na criação de interfaces modernas e responsivas com foco em experiência do usuário.",
+    skills: ["React", "TypeScript", "UX/UI"],
     image: "/team/lucas-lima.jpg",
   },
   {
-    linkedin: "https://linkedin.com/in/lucaslimacoder",
+    linkedin: "https://www.linkedin.com/in/mau-me/",
     name: "Mauricio Menezes",
-    role: "Líder de Desenvolvimento Backend",
-    description: "Especialista em sistemas distribuídos e bancos de dados de alta performance.",
-    skills: ["Node.js", "MongoDB", "Kubernetes"],
+    role: "Especialista em IA e Machine Learning",
+    description: "Desenvolve soluções inovadoras utilizando inteligência artificial e aprendizado de máquina.",
+    skills: ["Python", "TensorFlow", "Computer Vision"],
     image: "/team/mauricio-menezes.jpg",
   },
 ]
 
 const expertise = [
   "Gestão de Projetos",
-  "Planejamento Estratégico", 
+  "Planejamento Estratégico",
   "Infraestrutura Cloud",
   "Bancos de Dados",
   "Desenvolvimento Full-stack",
   "Inteligência Artificial",
   "Automação de Processos",
   "Interfaces Modernas",
-  "Testes Automatizados", 
+  "Testes Automatizados",
   "Aplicações Mobile",
   "Segurança da Informação",
   "Integração de Sistemas",
@@ -79,7 +79,7 @@ const expertise = [
   "Big Data Analytics",
   "UX/UI Design",
   "Blockchain",
-  "Internet das Coisas (IoT)",
+  "Internet das Coisas",
   "Machine Learning"
 ]
 
