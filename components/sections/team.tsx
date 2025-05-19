@@ -39,7 +39,7 @@ const teamMembers = [
     name: "Gabriel Pontes",
     role: "Líder de Desenvolvimento Backend",
     description: "Especialista em sistemas distribuídos e bancos de dados de alta performance.",
-    skills: ["Node.js", "MongoDB", "Kubernetes"],
+    skills: ["Kubernetes"],
     image: "/team/gabriel-pontes.jpg",
   },
   {
@@ -47,17 +47,17 @@ const teamMembers = [
     name: "Lucas Lima",
     role: "Líder de Desenvolvimento Frontend",
     description: "Especializado na criação de interfaces modernas e responsivas com foco em experiência do usuário.",
-    skills: ["React", "TypeScript", "UX/UI", "Agentes de IA"],
+    skills: ["Node.js", "MongoDB", "TypeScript", "UX/UI", "Agentes de IA"],
     image: "/team/lucas-lima.jpg",
   },
   {
     linkedin: "https://www.linkedin.com/in/mau-me/",
     name: "Mauricio Menezes",
     role: "Especialista em IA e Machine Learning",
-    description: "Desenvolve soluções inovadoras utilizando inteligência artificial e aprendizado de máquina.",
-    skills: ["Python", "TensorFlow", "Computer Vision"],
+    description: "Cria soluções inovadoras e eficientes utilizando inteligência artificial de formas práticas e escaláveis.",
+    skills: ["Inteligência Artificial", "Machine Learning", "Visão Computacional", "Cloud", "Python"],
     image: "/team/mauricio-menezes.jpg",
-  },
+  }
 ]
 
 const expertise = [
@@ -162,7 +162,7 @@ export function Team() {
         </motion.div>
 
         <motion.div
-          className="mt-16 mb-16" 
+          className="mt-16 mb-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
