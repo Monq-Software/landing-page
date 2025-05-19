@@ -31,8 +31,7 @@ const projects = [
     title: "Modernização de Plataforma Bancária",
     description:
       "Redesenhamos e reconstruímos uma plataforma bancária legada em uma solução moderna e escalável com segurança e experiência do usuário aprimoradas.",
-    image: "/fintech-dashboard.png",
-    category: "Fintech",
+    image: "assets/place-holder.png",
     technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
     stats: [
       { icon: CheckCircle, text: "40% mais rápido" },
@@ -43,8 +42,7 @@ const projects = [
     title: "Plataforma de Varejo Omnichannel",
     description:
       "Desenvolvemos uma solução abrangente de e-commerce integrando experiências de compra online e em loja com inventário em tempo real.",
-    image: "/ecommerce-mobile-app.png",
-    category: "E-commerce",
+    image: "assets/place-holder.png",
     technologies: ["React Native", "GraphQL", "MongoDB", "Azure"],
     stats: [
       { icon: BarChart3, text: "35% aumento nas vendas" },
@@ -55,7 +53,7 @@ const projects = [
     title: "Sistema de Captura Biométrica",
     description:
       "Desenvolvemos um sistema avançado de captura biométrica incluindo assinatura digital, impressão digital e reconhecimento facial para instituições financeiras.",
-    image: "/biometric-capture.png",
+    image: "assets/place-holder.png",
     category: "Segurança",
     technologies: ["Java", "OpenCV", "PostgreSQL", "Docker"],
     stats: [
@@ -67,7 +65,7 @@ const projects = [
     title: "Integração com Sistemas Federais",
     description:
       "Criamos uma plataforma de integração com sistemas do SERPRO para validação de documentos e informações cadastrais em tempo real.",
-    image: "/government-integration.png",
+    image: "assets/place-holder.png",
     category: "Governo",
     technologies: ["Java", "Spring Boot", "Oracle", "Kubernetes"],
     stats: [
@@ -79,8 +77,7 @@ const projects = [
     title: "Plataforma de Integração Multiorgãos",
     description:
       "Desenvolvemos um sistema que integra dados entre múltiplos órgãos governamentais como polícia, Detran e outros, facilitando a troca segura de informações.",
-    image: "/multi-agency-platform.png",
-    category: "Governo",
+    image: "assets/place-holder.png",
     technologies: ["C#", ".NET Core", "SQL Server", "Azure"],
     stats: [
       { icon: Users, text: "+30 órgãos integrados" },
@@ -91,8 +88,7 @@ const projects = [
     title: "Sistema de IA Multimodal",
     description:
       "Criamos uma solução de inteligência artificial para reconhecimento e extração de informações de imagens e textos para automatizar processos documentais.",
-    image: "/ai-multimodal.png",
-    category: "IA",
+    image: "assets/place-holder.png",
     technologies: ["Python", "TensorFlow", "PyTorch", "GCP"],
     stats: [
       { icon: CheckCircle, text: "95% precisão" },
@@ -125,20 +121,22 @@ export function Projects() {
           variants={staggerContainer}
         >
           {projects.map((project, index) => (
-            <motion.div key={index} variants={fadeIn}>
-              <Card className="bg-[#00010D] border-[#595956]/20 overflow-hidden h-full hover:shadow-lg hover:shadow-[#595956]/10 transition-all">
-                <div className="relative h-48">
-                  <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
-                  <div className="absolute top-4 left-4">
-                    <Badge className="bg-[#595956]">{project.category}</Badge>
-                  </div>
-                </div>
-                <CardContent className="p-6">
+            <motion.div
+              key={index}
+              variants={fadeIn}
+              whileHover={{ scale: 1.05, zIndex: 10 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <Card className="bg-[#00010D] border-[#595956]/20 overflow-hidden h-full hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-all duration-300">
+                <CardContent className="p-6 relative">
                   <h3 className="text-xl font-bold text-[#F2F2F0] mb-2">{project.title}</h3>
                   <p className="text-[#8C8C88] mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, idx) => (
-                      <Badge key={idx} variant="outline" className="border-[#595956]/40 text-[#8C8C88]">
+                      <Badge
+                        key={idx}
+                        className="bg-[#ff0000]/10 text-[#ff0000] border-[#ff0000]/40 hover:bg-[#ff0000]/20 transition-colors"
+                      >
                         {tech}
                       </Badge>
                     ))}
@@ -146,8 +144,8 @@ export function Projects() {
                   <div className="flex items-center gap-4">
                     {project.stats.map((stat, idx) => (
                       <div key={idx} className="flex items-center gap-2">
-                        <stat.icon className="text-[#8C8C88] h-5 w-5" />
-                        <span className="text-[#8C8C88]">{stat.text}</span>
+                        <stat.icon className="text-[#00ffff] h-5 w-5" />
+                        <span className="text-[#00ffff]">{stat.text}</span>
                       </div>
                     ))}
                   </div>
@@ -163,10 +161,6 @@ export function Projects() {
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <Button variant="outline" size="lg" className="border-[#595956] text-[#F2F2F0] hover:bg-[#595956]/20">
-            <span>Ver Todos os Estudos de Caso</span>
-            <ExternalLink className="ml-2 h-5 w-5" />
-          </Button>
         </motion.div>
       </div>
     </section>

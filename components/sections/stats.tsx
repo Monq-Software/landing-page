@@ -38,26 +38,19 @@ export function Stats() {
           <motion.div className="bg-[#00010D] rounded-2xl overflow-hidden" variants={fadeIn}>
             <div className="p-8">
               <h2 className="text-3xl md:text-4xl font-bold text-[#F2F2F0] mb-4">
-                <span className="text-[#595956]">M</span>odularidade
+                <span className="text-[#595956]">M</span> odularidade
                 <br />
-                <span className="text-[#595956]">O</span>rquestração
+                <span className="text-[#595956]">O </span> rquestração
                 <br />
-                <span className="text-[#595956]">N</span>etworking
+                <span className="text-[#595956]">N </span> etworking
                 <br />
-                <span className="text-[#595956]">Q</span>ualidade
+                <span className="text-[#595956]">Q </span> ualidade
               </h2>
               <p className="text-[#8C8C88] mb-4">
                 Nossa abordagem simboliza raciocínio rápido, adaptação, criatividade e solução de problemas para
                 garantir que seu projeto tenha sucesso em todas as etapas.
               </p>
             </div>
-            <Image
-              src="/monq-logo.png"
-              alt="Design Desenvolver Entregar"
-              width={600}
-              height={300}
-              className="w-full h-auto"
-            />
           </motion.div>
           <div className="grid grid-cols-1 gap-6">
             <motion.div className="bg-[#0D0D0D] border border-[#595956]/20 p-6 rounded-xl" variants={fadeIn}>

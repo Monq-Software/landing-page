@@ -31,11 +31,6 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="flex gap-1 mb-4">
-              <Badge className="bg-[#595956] hover:bg-[#595956]/80">Software</Badge>
-              <Badge className="bg-[#595956] hover:bg-[#595956]/80">Desenvolvimento</Badge>
-              <Badge className="bg-[#595956] hover:bg-[#595956]/80">Soluções</Badge>
-            </div>
             <h1 className="text-4xl md:text-6xl font-bold text-[#F2F2F0] mb-4 leading-tight">
               Criando o Software
               <br />
@@ -45,13 +40,16 @@ export function Hero() {
               Transformando Ideias em Histórias de Sucesso em Software
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-[#595956] hover:bg-[#595956]/80 text-[#F2F2F0] group">
+              <Button size="lg" className="bg-[#595956] hover:bg-[#595956]/80 text-[#F2F2F0] group"
+                onClick={() => window.open('https://wa.me/5571999648913?text=Tenho%20uma%20ideia%20de%20software')}
+              >
                 <span>Vamos Conversar</span>
                 <MessageCircle className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
               </Button>
               <Button
                 variant="outline"
                 size="lg"
+                onClick={() => window.location.href = "#projetos"}
                 className="border-[#595956] text-[#F2F2F0] hover:bg-[#595956]/20 group"
               >
                 <span>Ver Projetos</span>
@@ -61,17 +59,39 @@ export function Hero() {
           </motion.div>
           <motion.div
             className="md:w-1/2 flex justify-center"
-            initial={{ opacity: 0, rotate: -10 }}
-            animate={{ opacity: 1, rotate: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            initial={{ opacity: 0, scale: 0.8, y: 50 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
-            <div className="relative w-80 h-80">
+            <div className="relative w-80 h-80 group">
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-br from-[#ff0000] to-[#00ffff] rounded-2xl"
+                animate={{
+                  scale: [1, 1.05, 1],
+                  rotate: [0, 5, -5, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  ease: "easeInOut",
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+              />
               <Image
-                src="/abstract-3d-spiral.png"
+                src="/monq-logo.png"
                 alt="Visualização 3D abstrata"
                 width={400}
                 height={400}
-                className="animate-slow-spin"
+                className="relative z-10 w-full h-full object-cover rounded-2xl 
+        group-hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] 
+        transition-shadow duration-300"
+              />
+              <motion.div
+                className="absolute inset-0 border-2 border-transparent 
+        group-hover:border-[#00ffff]/50 rounded-2xl"
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
               />
             </div>
           </motion.div>

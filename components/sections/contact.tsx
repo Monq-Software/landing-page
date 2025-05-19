@@ -44,15 +44,12 @@ export function Contact() {
                 Vamos conversar sobre a arquitetura da sua próxima solução.
               </h3>
               <div className="space-y-6">
-                <Button size="lg" className="w-full bg-[#595956] hover:bg-[#595956]/80 text-[#F2F2F0] group">
-                  <MessageCircle className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
-                  <span>Conectar via WhatsApp</span>
-                </Button>
                 <div className="flex gap-4">
                   <Button
                     variant="outline"
                     size="lg"
                     className="flex-1 border-[#595956]/40 text-[#F2F2F0] hover:bg-[#595956]/20 group"
+                    onClick={() => window.location.href = 'mailto:monqsoftware@gmail.com'}
                   >
                     <Mail className="mr-2 h-5 w-5 group-hover:translate-y-[-2px] transition-transform" />
                     <span>Email</span>
@@ -61,9 +58,10 @@ export function Contact() {
                     variant="outline"
                     size="lg"
                     className="flex-1 border-[#595956]/40 text-[#F2F2F0] hover:bg-[#595956]/20 group"
+                    onClick={() => window.open('https://wa.me/5571999648913?text=Tenho%20uma%20ideia%20de%20software')}
                   >
-                    <Linkedin className="mr-2 h-5 w-5 group-hover:translate-y-[-2px] transition-transform" />
-                    <span>LinkedIn</span>
+                    <MessageCircle className="mr-2 h-5 w-5 group-hover:translate-y-[-2px] transition-transform" />
+                    <span>Whatsapp</span>
                   </Button>
                 </div>
               </div>

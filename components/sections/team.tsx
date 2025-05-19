@@ -27,6 +27,7 @@ const staggerContainer = {
 const teamMembers = [
   {
     name: "Atila Almeida",
+    linkedin: "https://linkedin.com/in/lucaslimacoder",
     role: "Arquiteto de Software",
     description:
       "Especialista em arquiteturas escaláveis e soluções de alta performance com mais de 12 anos de experiência.",
@@ -34,6 +35,7 @@ const teamMembers = [
     image: "/team/atila-almeida.jpg",
   },
   {
+    linkedin: "https://linkedin.com/in/lucaslimacoder",
     name: "Gabriel Pontes",
     role: "Líder de Desenvolvimento Frontend",
     description: "Especializado na criação de interfaces modernas e responsivas com foco em experiência do usuário.",
@@ -41,6 +43,7 @@ const teamMembers = [
     image: "/team/gabriel-pontes.jpg",
   },
   {
+    linkedin: "https://linkedin.com/in/lucaslimacoder",
     name: "Lucas Lima",
     role: "Especialista em IA e Machine Learning",
     description: "Desenvolve soluções inovadoras utilizando inteligência artificial e aprendizado de máquina.",
@@ -48,6 +51,7 @@ const teamMembers = [
     image: "/team/lucas-lima.jpg",
   },
   {
+    linkedin: "https://linkedin.com/in/lucaslimacoder",
     name: "Mauricio Menezes",
     role: "Líder de Desenvolvimento Backend",
     description: "Especialista em sistemas distribuídos e bancos de dados de alta performance.",
@@ -58,17 +62,25 @@ const teamMembers = [
 
 const expertise = [
   "Gestão de Projetos",
-  "Planejamento Estratégico",
+  "Planejamento Estratégico", 
   "Infraestrutura Cloud",
   "Bancos de Dados",
   "Desenvolvimento Full-stack",
   "Inteligência Artificial",
   "Automação de Processos",
   "Interfaces Modernas",
-  "Testes Automatizados",
+  "Testes Automatizados", 
   "Aplicações Mobile",
   "Segurança da Informação",
   "Integração de Sistemas",
+  "Arquitetura de Software",
+  "DevOps",
+  "Microsserviços",
+  "Big Data Analytics",
+  "UX/UI Design",
+  "Blockchain",
+  "Internet das Coisas (IoT)",
+  "Machine Learning"
 ]
 
 export function Team() {
@@ -120,7 +132,7 @@ export function Team() {
               </div>
               <div className="flex justify-center items-center">
                 <Image
-                  src="/software-team-office.png"
+                  src="assets/place-holder.png"
                   alt="Equipe MONQ Software"
                   width={500}
                   height={300}
@@ -140,17 +152,33 @@ export function Team() {
         >
           {teamMembers.map((member, index) => (
             <motion.div key={index} variants={fadeIn}>
-              <Card className="bg-[#0D0D0D] border-[#595956]/20 h-full hover:shadow-lg hover:shadow-[#595956]/10 transition-all">
+              <Card className="bg-[#0D0D0D] border-[#595956]/20 h-full relative overflow-hidden group">
                 <CardContent className="p-6">
                   <div className="mb-4 rounded-xl overflow-hidden group relative">
-                    <Image
-                      src={member.image || "/placeholder.svg"}
-                      alt={member.name}
-                      width={300}
-                      height={300}
-                      className="w-full h-auto transition-transform group-hover:scale-105 duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#00010D] to-transparent opacity-60"></div>
+                    {member.linkedin && (
+                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src={member.image || "/placeholder.svg"}
+                          alt={member.name}
+                          width={300}
+                          height={300}
+                          className="w-full h-auto transition-transform group-hover:scale-105 duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#00010D] to-transparent opacity-60"></div>
+                      </a>
+                    )}
+                    {!member.linkedin && (
+                      <>
+                        <Image
+                          src={member.image || "/placeholder.svg"}
+                          alt={member.name}
+                          width={300}
+                          height={300}
+                          className="w-full h-auto transition-transform group-hover:scale-105 duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#00010D] to-transparent opacity-60"></div>
+                      </>
+                    )}
                   </div>
                   <h3 className="text-xl font-bold text-[#F2F2F0] mb-1">{member.name}</h3>
                   <p className="text-[#8C8C88] mb-3">{member.role}</p>
@@ -163,6 +191,14 @@ export function Team() {
                     ))}
                   </div>
                 </CardContent>
+                <div
+                  className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#ff0000] to-[#00ffff]
+                    scale-x-0 origin-right group-hover:scale-x-100 transition-transform duration-400 ease-out"
+                ></div>
+                <div
+                  className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#ff0000] to-[#00ffff]
+                    scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-400 ease-out"
+                ></div>
               </Card>
             </motion.div>
           ))}

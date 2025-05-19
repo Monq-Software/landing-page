@@ -78,7 +78,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="tel:+551199999999"
+                  href="https://wa.me/5571999648913?text=Tenho%20uma%20ideia%20de%20software" target="_blank"
                   className="flex items-center gap-2 text-[#8C8C88] hover:text-[#F2F2F0] transition-colors"
                 >
                   <Phone size={16} />
@@ -92,9 +92,9 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-[#8C8C88] mb-4 md:mb-0">© 2025 MONQ Software. Todos os direitos reservados.</p>
             <div className="flex gap-6">
-                <Link href="https://www.termsfeed.com/live/16725834-26e9-4e8a-8958-b35cb49c74c9" target="_blank" className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors">
+              <Link href="https://www.termsfeed.com/live/16725834-26e9-4e8a-8958-b35cb49c74c9" target="_blank" className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors">
                 Política de Privacidade
-                </Link>
+              </Link>
             </div>
           </div>
         </div>
