@@ -47,7 +47,7 @@ const teamMembers = [
     name: "Lucas Lima",
     role: "Líder de Desenvolvimento Frontend",
     description: "Especializado na criação de interfaces modernas e responsivas com foco em experiência do usuário.",
-    skills: ["React", "TypeScript", "UX/UI"],
+    skills: ["React", "TypeScript", "UX/UI", "Agentes de IA"],
     image: "/team/lucas-lima.jpg",
   },
   {
@@ -96,51 +96,8 @@ export function Team() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-[#F2F2F0] mb-4">Nossa Equipe de Especialistas</h2>
           <p className="text-xl text-[#8C8C88] max-w-3xl mx-auto">
-            Conheça os profissionais talentosos por trás de nossos projetos de sucesso
+            Conheça os profissionais por trás de nossos projetos de sucesso
           </p>
-        </motion.div>
-
-        <motion.div
-          className="mb-16"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeIn}
-        >
-          <div className="bg-[#0D0D0D] rounded-2xl overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
-              <div>
-                <h3 className="text-2xl font-bold text-[#F2F2F0] mb-4">Time Multidisciplinar</h3>
-                <p className="text-[#8C8C88] mb-6">
-                  Nossa equipe diversificada reúne décadas de experiência combinada em diversas áreas de software,
-                  permitindo que entreguemos soluções completas e integradas para qualquer desafio tecnológico.
-                </p>
-                <div className="grid grid-cols-2 gap-3 mt-6">
-                  {expertise.map((skill, index) => (
-                    <motion.div
-                      key={index}
-                      className="flex items-center gap-2"
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      viewport={{ once: true }}
-                    >
-                      <Badge className="bg-[#595956]/20 text-[#8C8C88]">{skill}</Badge>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-              <div className="flex justify-center items-center">
-                <Image
-                  src="assets/place-holder.png"
-                  alt="Equipe MONQ Software"
-                  width={500}
-                  height={300}
-                  className="rounded-xl shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
         </motion.div>
 
         <motion.div
@@ -158,7 +115,7 @@ export function Team() {
                     {member.linkedin && (
                       <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
                         <Image
-                          src={member.image || "/placeholder.svg"}
+                          src={member.image}
                           alt={member.name}
                           width={300}
                           height={300}
@@ -170,7 +127,7 @@ export function Team() {
                     {!member.linkedin && (
                       <>
                         <Image
-                          src={member.image || "/placeholder.svg"}
+                          src={member.image}
                           alt={member.name}
                           width={300}
                           height={300}
@@ -202,6 +159,49 @@ export function Team() {
               </Card>
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          className="mt-16 mb-16" 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn}
+        >
+          <div className="bg-[#0D0D0D] rounded-2xl overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+              <div>
+                <h3 className="text-2xl font-bold text-[#F2F2F0] mb-4">Atuamos em diversas áreas</h3>
+                <p className="text-[#8C8C88] mb-6">
+                  Nossa equipe diversificada reúne experiência combinada em diversas áreas de software,
+                  permitindo que entreguemos soluções completas e integradas para qualquer desafio tecnológico.
+                </p>
+                <div className="grid grid-cols-2 gap-3 mt-6">
+                  {expertise.map((skill, index) => (
+                    <motion.div
+                      key={index}
+                      className="flex items-center gap-2"
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                    >
+                      <Badge className="bg-[#595956]/20 text-[#8C8C88]">{skill}</Badge>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+              <div className="flex justify-center items-center">
+                <Image
+                  src="assets/place-holder.png"
+                  alt="Equipe MONQ Software"
+                  width={500}
+                  height={300}
+                  className="rounded-xl shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -37,7 +37,7 @@ export function Hero() {
               do Futuro Hoje!
             </h1>
             <p className="text-xl text-[#8C8C88] mb-8 max-w-lg">
-              Transformando Ideias em Histórias de Sucesso em Software
+              Transformando ideias em histórias de sucesso em software
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-[#595956] hover:bg-[#595956]/80 text-[#F2F2F0] group"

@@ -3,9 +3,9 @@ import { Mail, MapPin, Phone } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-[#0D0D0D] py-12 border-t border-[#595956]/20">
+    <footer className="bg-[#0D0D0D] py-16 border-t border-[#595956]/20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Link href="/" className="flex items-center gap-2">
@@ -17,12 +17,7 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-[#F2F2F0] font-bold mb-4">Serviços</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#servicos" className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors">
-                  Aumento de Talentos
-                </Link>
-              </li>
+            <ul className="space-y-3">
               <li>
                 <Link href="#servicos" className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors">
                   Engenharia de Produtos
@@ -30,7 +25,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="#servicos" className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors">
-                  Serviços para Startups
+                  Soluções para Startups
                 </Link>
               </li>
               <li>
@@ -42,9 +37,9 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-[#F2F2F0] font-bold mb-4">Empresa</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors">
+                <Link href="#equipe" className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors">
                   Equipe
                 </Link>
               </li>
@@ -62,7 +57,7 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-[#F2F2F0] font-bold mb-4">Contato</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li className="flex items-center gap-2 text-[#8C8C88]">
                 <MapPin size={16} />
                 <span>Salvador, Bahia, Brazil</span>
@@ -78,7 +73,8 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://wa.me/5571999648913?text=Tenho%20uma%20ideia%20de%20software" target="_blank"
+                  href="https://wa.me/5571999648913?text=Tenho%20uma%20ideia%20de%20software"
+                  target="_blank"
                   className="flex items-center gap-2 text-[#8C8C88] hover:text-[#F2F2F0] transition-colors"
                 >
                   <Phone size={16} />
@@ -88,11 +84,15 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-[#595956]/20 pt-8">
+        <div className="border-t border-[#595956]/20 pt-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-[#8C8C88] mb-4 md:mb-0">© 2025 MONQ Software. Todos os direitos reservados.</p>
             <div className="flex gap-6">
-              <Link href="https://www.termsfeed.com/live/16725834-26e9-4e8a-8958-b35cb49c74c9" target="_blank" className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors">
+              <Link
+                href="https://www.termsfeed.com/live/16725834-26e9-4e8a-8958-b35cb49c74c9"
+                target="_blank"
+                className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors"
+              >
                 Política de Privacidade
               </Link>
             </div>

@@ -108,7 +108,7 @@ export function Projects() {
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#F2F2F0] mb-4">Nossos Projetos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#F2F2F0] mb-4">Projetos</h2>
           <p className="text-xl text-[#8C8C88] max-w-3xl mx-auto">
             Explore nosso portfólio de soluções de software bem-sucedidas
           </p>

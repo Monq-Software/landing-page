@@ -35,38 +35,18 @@ export function Services() {
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#F2F2F0] mb-4">Nossos Serviços</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#F2F2F0] mb-4">Serviços</h2>
           <p className="text-xl text-[#8C8C88] max-w-3xl mx-auto">
             Soluções abrangentes de software adaptadas às necessidades do seu negócio
           </p>
         </motion.div>
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
         >
-          <motion.div variants={fadeIn}>
-            <Card className="bg-[#0D0D0D] border-[#595956]/20 hover:bg-[#0D0D0D]/80 transition-colors group h-full">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-[#595956]/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#595956]/40 transition-colors">
-                  <Users className="text-[#8C8C88] h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold text-[#F2F2F0] mb-2">Aumento de Talentos</h3>
-                <p className="text-[#8C8C88] mb-4">
-                  Reforce sua equipe com nossos desenvolvedores qualificados para acelerar a entrega do seu projeto.
-                </p>
-                <Link
-                  href="#"
-                  className="text-[#595956] flex items-center group-hover:text-[#8C8C88] transition-colors"
-                >
-                  Saiba mais
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </CardContent>
-            </Card>
-          </motion.div>
           <motion.div variants={fadeIn}>
             <Card className="bg-[#0D0D0D] border-[#595956]/20 hover:bg-[#0D0D0D]/80 transition-colors group h-full">
               <CardContent className="p-6">
@@ -77,13 +57,6 @@ export function Services() {
                 <p className="text-[#8C8C88] mb-4">
                   Desenvolvimento completo de produtos de software personalizados, do conceito à implantação.
                 </p>
-                <Link
-                  href="#"
-                  className="text-[#595956] flex items-center group-hover:text-[#8C8C88] transition-colors"
-                >
-                  Saiba mais
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
               </CardContent>
             </Card>
           </motion.div>
@@ -93,17 +66,10 @@ export function Services() {
                 <div className="w-12 h-12 bg-[#595956]/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#595956]/40 transition-colors">
                   <Lightbulb className="text-[#8C8C88] h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold text-[#F2F2F0] mb-2">Serviços para Startups</h3>
+                <h3 className="text-xl font-bold text-[#F2F2F0] mb-2">Soluções para Startups</h3>
                 <p className="text-[#8C8C88] mb-4">
                   Soluções especializadas para startups levarem ideias inovadoras ao mercado rapidamente.
                 </p>
-                <Link
-                  href="#"
-                  className="text-[#595956] flex items-center group-hover:text-[#8C8C88] transition-colors"
-                >
-                  Saiba mais
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
               </CardContent>
             </Card>
           </motion.div>
@@ -117,13 +83,6 @@ export function Services() {
                 <p className="text-[#8C8C88] mb-4">
                   Orientação estratégica sobre decisões tecnológicas para otimizar os resultados do seu negócio.
                 </p>
-                <Link
-                  href="#"
-                  className="text-[#595956] flex items-center group-hover:text-[#8C8C88] transition-colors"
-                >
-                  Saiba mais
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
               </CardContent>
             </Card>
           </motion.div>

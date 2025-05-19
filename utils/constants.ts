@@ -2,11 +2,6 @@ import { Users, Code, Lightbulb, BarChart3, Shield, Database, Cloud, Cpu, Smartp
 
 export const services = [
   {
-    icon: Users,
-    title: "Aumento de Talentos",
-    description: "Reforce sua equipe com nossos desenvolvedores qualificados para acelerar a entrega do seu projeto.",
-  },
-  {
     icon: Code,
     title: "Engenharia de Produtos",
     description: "Desenvolvimento completo de produtos de software personalizados, do conceito à implantação.",

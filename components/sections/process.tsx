@@ -34,10 +34,9 @@ export function Process() {
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <Badge className="bg-[#595956] hover:bg-[#595956]/80 mb-4">Nossa Metodologia</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-[#F2F2F0] mb-4">Nosso Processo Ágil</h2>
           <p className="text-xl text-[#8C8C88] max-w-3xl mx-auto">
-            Seguimos nossa maneira única de entregar nossos valores de flexibilidade e escalabilidade
+            Seguimos nossa maneira de entregar nossos valores de flexibilidade e escalabilidade
           </p>
         </motion.div>
         <motion.div
@@ -117,7 +116,7 @@ export function Process() {
             <Card className="bg-[#00010D] border-[#595956]/20 hover:bg-[#00010D]/80 transition-colors h-full">
               <CardContent className="p-6">
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-xl font-bold text-[#F2F2F0]">O Lançamento</h3>
+                  <h3 className="text-xl font-bold text-[#F2F2F0]">Lançamento</h3>
                   <Badge className="bg-[#595956]">06</Badge>
                 </div>
                 <p className="text-[#8C8C88]">
