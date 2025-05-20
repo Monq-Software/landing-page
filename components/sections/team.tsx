@@ -28,7 +28,7 @@ const teamMembers = [
   {
     name: "Atila Almeida",
     linkedin: "https://www.linkedin.com/in/atila-bezerra/",
-    role: "Arquiteto de Soluções - Infraestrutura e Integrações",
+    role: "Arquiteto de Soluções | Infraestrutura & Integrações",
     description:
       "Possui sólida experiência com APIs governamentais, integração com dispositivos biométricos, segurança da informação, infraestrutura escalável e integração de hardwares especializados com aplicações .NET.",
     skills: ["C#", ".NET Core e Framework", "Aplicações Windows", "RESTAPIs", "Azure Cloud", "Docker e Kubernetes", "CI/CD", "SQL e NoSQL", "OIDC", "Observabilidade"],
@@ -37,10 +37,23 @@ const teamMembers = [
   {
     linkedin: "https://www.linkedin.com/in/gabpontes/",
     name: "Gabriel Pontes",
-    role: "Líder de Desenvolvimento Backend",
-    description: "Especialista em sistemas distribuídos e bancos de dados de alta performance.",
-    skills: ["Kubernetes"],
-    image: "/team/gabriel-pontes.jpg",
+    role: "Arquiteto de Soluções | Software & Cybersecurity",
+    description: "Especializado em soluções de software modernas com ênfase em segurança digital, integrando biometria, criptografia e infraestrutura em nuvem para garantir alta confiabilidade e proteção de dados.",
+    skills: [
+      "Azure Cloud",
+      "AWS",
+      "Kubernetes",
+      "Microservices",
+      "Clean Architecture",
+      "Domain-Driven Design (DDD)",
+      "CI/CD",
+      "DevSecOps",
+      "Cybersecurity",
+      "OWASP",
+      "MITRE ATT&CK",
+      "Purple Team"
+    ],
+    image: "/team/gabriel-pontes.jpg"
   },
   {
     linkedin: "https://linkedin.com/in/lucaslimacoder",
