@@ -65,7 +65,7 @@ const projects = [
     description:
       "Implementamos um conjunto de aplicações para captura biométrica com reconhecimento facial, leitura de impressões digitais e assinatura eletrônica, em conformidade com padrões do FBI, NIST e portarias estaduais, para validação de documentos civis e pesquisa biométrica avançada, compatível com sistemas ABIS.",
     image: "assets/place-holder.png",
-    technologies: [".NET", "BioAPI", "SQL Server", "Docker", "WSQ", "EBTS", "NIST SDK"],
+    technologies: ["C#", ".NET Core e Framework", "BioAPI", "SQL Server", "Docker", "WSQ", "EBTS", "NIST SDK"],
     stats: [
       { icon: CheckCircle, text: "Conforme FBI e NIST." },
       { icon: Users, text: "Centenas de milhares de registros processados." },
@@ -76,7 +76,7 @@ const projects = [
     description:
       "Desenvolvemos soluções com OCR e GED para transformar arquivos físicos em acervos digitais indexados, pesquisáveis e acessíveis com alto nível de controle e rastreabilidade.",
     image: "assets/place-holder.png",
-    technologies: ["Python", "Tesseract OCR", "Elasticsearch", "Node.js", "Azure", "MongoDB"],
+    technologies: ["C#", "Tesseract OCR", "Elasticsearch", "Node.js", "Python", "Electron", "Azure", "MongoDB"],
     stats: [
       { icon: BarChart3, text: "Acervo com milhares de documentos." },
       { icon: CheckCircle, text: "Indexação com filtros avançados." },
@@ -87,7 +87,7 @@ const projects = [
     description:
       "Integramos sistemas corporativos a gateways de pagamento com emissão de boletos, geração de notas fiscais e ordens de serviço automatizadas, otimizando rotinas financeiras e operacionais.",
     image: "assets/place-holder.png",
-    technologies: ["Node.js", "REST APIs", "ERP Integrations", "SQLServer", "Python", "Azure Functions"],
+    technologies: ["C#", ".NET Core e Framework", "REST APIs", "ERP Integrations", "SQLServer", "Python", "Azure Functions"],
     stats: [
       { icon: Clock, text: "Processamento em tempo real." },
       { icon: BarChart3, text: "Automação de 90% das rotinas." },
@@ -98,7 +98,7 @@ const projects = [
     description:
       "Desenvolvemos integrações entre órgãos órgãos de governo estadual e federal e secretarias públicas, promovendo troca segura, ágil e estruturada de dados conforme exigências contratuais e legais.",
     image: "assets/place-holder.png",
-    technologies: ["C#", ".NET Core", "SQL Server", "REST APIs", "Azure"],
+    technologies: ["C#", ".NET Core e Framework", "SQL Server", "REST APIs", "Azure"],
     stats: [
       { icon: CheckCircle, text: "Conformidade com normas governamentais." },
     ],
