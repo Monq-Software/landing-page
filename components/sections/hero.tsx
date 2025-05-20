@@ -32,12 +32,12 @@ export function Hero() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-[#F2F2F0] mb-4 leading-tight">
-              Criando o Software
+              Engenharia Digital 
               <br />
-              do Futuro Hoje!
+              para Soluções de Alto Impacto!
             </h1>
             <p className="text-xl text-[#8C8C88] mb-8 max-w-lg">
-              Transformando ideias em histórias de sucesso em software
+              Unimos inovação e excelência para transformar o seu negócio.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-[#595956] hover:bg-[#595956]/80 text-[#F2F2F0] group"

@@ -28,74 +28,102 @@ const staggerContainer = {
 
 const projects = [
   {
-    title: "Modernização de Plataforma Bancária",
+    title: "Modelo de Machine Learning para Classificação de Sequências Virais",
     description:
-      "Redesenhamos e reconstruímos uma plataforma bancária legada em uma solução moderna e escalável com segurança e experiência do usuário aprimoradas.",
+      "Desenvolvemos um modelo de aprendizado de máquina não supervisionado para a classificação de sequências genômicas do SARS-CoV-2, o vírus responsável pela COVID-19. Esse modelo é capaz de identificar a qual espécie uma sequência viral pertence e detectar potenciais novas variantes.",
     image: "assets/place-holder.png",
-    technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
+    technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Jupyter", "BioPython"],
     stats: [
-      { icon: CheckCircle, text: "40% mais rápido" },
-      { icon: Users, text: "+200 mil usuários" },
+      { icon: CheckCircle, text: "Alta acurácia de classificação." },
+      { icon: BarChart3, text: "Milhares de sequências analisadas." },
     ],
   },
   {
-    title: "Plataforma de Varejo Omnichannel",
+    title: "Chat Inteligente para Extração de Dados em Documentos",
     description:
-      "Desenvolvemos uma solução abrangente de e-commerce integrando experiências de compra online e em loja com inventário em tempo real.",
+      "Desenvolvemos uma solução de chat interativo, similar ao ChatGPT, que permite a extração de informações relevantes de documentos carregados (PDF, DOCX, TXT, CSV, XLSX, JSON e XML), por meio de consultas em linguagem natural.",
     image: "assets/place-holder.png",
-    technologies: ["React Native", "GraphQL", "MongoDB", "Azure"],
+    technologies: ["Python", "LangChain", "OpenAI API", "Pinecone", "FastAPI", "PDF.js"],
     stats: [
-      { icon: BarChart3, text: "35% aumento nas vendas" },
-      { icon: Clock, text: "99,9% de disponibilidade" },
-    ],
-  },
-  {
-    title: "Sistema de Captura Biométrica",
-    description:
-      "Desenvolvemos um sistema avançado de captura biométrica incluindo assinatura digital, impressão digital e reconhecimento facial para instituições financeiras.",
-    image: "assets/place-holder.png",
-    category: "Segurança",
-    technologies: ["Java", "OpenCV", "PostgreSQL", "Docker"],
-    stats: [
-      { icon: CheckCircle, text: "99,7% precisão" },
-      { icon: Clock, text: "Verificação em 2 segundos" },
-    ],
-  },
-  {
-    title: "Integração com Sistemas Federais",
-    description:
-      "Criamos uma plataforma de integração com sistemas do SERPRO para validação de documentos e informações cadastrais em tempo real.",
-    image: "assets/place-holder.png",
-    category: "Governo",
-    technologies: ["Java", "Spring Boot", "Oracle", "Kubernetes"],
-    stats: [
-      { icon: Zap, text: "Milhões de requisições/dia" },
-      { icon: CheckCircle, text: "Zero falhas de segurança" },
-    ],
-  },
-  {
-    title: "Plataforma de Integração Multiorgãos",
-    description:
-      "Desenvolvemos um sistema que integra dados entre múltiplos órgãos governamentais como polícia, Detran e outros, facilitando a troca segura de informações.",
-    image: "assets/place-holder.png",
-    technologies: ["C#", ".NET Core", "SQL Server", "Azure"],
-    stats: [
-      { icon: Users, text: "+30 órgãos integrados" },
-      { icon: Clock, text: "Resposta em milissegundos" },
+      { icon: Users, text: "Usado em jurídico, RH e financeiro." },
+      { icon: CheckCircle, text: "Respostas em segundos." },
     ],
   },
   {
     title: "Sistema de IA Multimodal",
     description:
-      "Criamos uma solução de inteligência artificial para reconhecimento e extração de informações de imagens e textos para automatizar processos documentais.",
+      "Desenvolvemos uma solução de inteligência artificial multimodal voltada para o reconhecimento e extração automática de caracteres de placas de veículos em vídeos capturados por câmeras de segurança. A tecnologia combina modelos de detecção de objetos com LLMs para análise precisa e em tempo real.",
     image: "assets/place-holder.png",
-    technologies: ["Python", "TensorFlow", "PyTorch", "GCP"],
+    technologies: ["Python", "TensorFlow", "PyTorch", "OCR", "OpenCV", "GCP"],
     stats: [
-      { icon: CheckCircle, text: "95% precisão" },
-      { icon: BarChart3, text: "70% redução de tempo" },
+      { icon: CheckCircle, text: "95% de precisão média." },
+      { icon: BarChart3, text: "70% de redução no tempo de análise." },
     ],
   },
-]
+  {
+    title: "Sistema de Captura e Identificação Biométrica",
+    description:
+      "Implementamos um conjunto de aplicações para captura biométrica com reconhecimento facial, leitura de impressões digitais e assinatura eletrônica, em conformidade com padrões do FBI, NIST e portarias estaduais, para validação de documentos civis e pesquisa biométrica avançada, compatível com sistemas ABIS.",
+    image: "assets/place-holder.png",
+    technologies: [".NET", "BioAPI", "SQL Server", "Docker", "WSQ", "EBTS", "NIST SDK"],
+    stats: [
+      { icon: CheckCircle, text: "Conforme FBI e NIST." },
+      { icon: Users, text: "Centenas de milhares de registros processados." },
+    ],
+  },
+  {
+    title: "Sistema de Digitalização de Documentos",
+    description:
+      "Desenvolvemos soluções com OCR e GED para transformar arquivos físicos em acervos digitais indexados, pesquisáveis e acessíveis com alto nível de controle e rastreabilidade.",
+    image: "assets/place-holder.png",
+    technologies: ["Python", "Tesseract OCR", "Elasticsearch", "Node.js", "Azure", "MongoDB"],
+    stats: [
+      { icon: BarChart3, text: "Acervo com milhares de documentos." },
+      { icon: CheckCircle, text: "Indexação com filtros avançados." },
+    ],
+  },
+  {
+    title: "Integração de Gateways de Pagamento",
+    description:
+      "Integramos sistemas corporativos a gateways de pagamento com emissão de boletos, geração de notas fiscais e ordens de serviço automatizadas, otimizando rotinas financeiras e operacionais.",
+    image: "assets/place-holder.png",
+    technologies: ["Node.js", "REST APIs", "ERP Integrations", "SQLServer", "Python", "Azure Functions"],
+    stats: [
+      { icon: Clock, text: "Processamento em tempo real." },
+      { icon: BarChart3, text: "Automação de 90% das rotinas." },
+    ],
+  },
+  {
+    title: "Integração entre Órgãos Públicos",
+    description:
+      "Desenvolvemos integrações entre órgãos órgãos de governo estadual e federal e secretarias públicas, promovendo troca segura, ágil e estruturada de dados conforme exigências contratuais e legais.",
+    image: "assets/place-holder.png",
+    technologies: ["C#", ".NET Core", "SQL Server", "REST APIs", "Azure"],
+    stats: [
+      { icon: CheckCircle, text: "Conformidade com normas governamentais." },
+    ],
+  },
+  {
+    title: "Infraestrutura e Segurança da Informação",
+    description:
+      "Implementamos infraestruturas escaláveis e seguras com CI/CD, redundância, proxies e práticas rígidas de segurança da informação para ambientes críticos e de alta disponibilidade.",
+    image: "assets/place-holder.png",
+    technologies: ["Terraform", "Docker", "Kubernetes", "Azure", "GitHub Actions"],
+    stats: [
+      { icon: CheckCircle, text: "Aderência à ISO/IEC 27001." },
+    ],
+  },
+  {
+    title: "Aplicações Mobile com Design Moderno",
+    description:
+      "Desenvolvemos apps mobile com interfaces modernas, intuitivas e responsivas, focando na melhor experiência do usuário e alto desempenho.",
+    image: "assets/place-holder.png",
+    technologies: ["React Native", "Flutter", "Figma", "Firebase", "Expo"],
+    stats: [
+      { icon: Users, text: "Alcance em larga escala." },
+    ],
+  }
+];
 
 export function Projects() {
   return (
