@@ -28,10 +28,10 @@ const teamMembers = [
   {
     name: "Atila Almeida",
     linkedin: "https://www.linkedin.com/in/atila-bezerra/",
-    role: "Líder de Integrações",
+    role: "Arquiteto de Soluções - Infraestrutura e Integrações",
     description:
-      "Especialista em arquiteturas escaláveis e soluções de alta performance com mais de 12 anos de experiência.",
-    skills: ["Java", "AWS", "Microserviços"],
+      "Possui sólida experiência com APIs governamentais, integração com dispositivos biométricos, segurança da informação, infraestrutura escalável e integração de hardwares especializados com aplicações .NET.",
+    skills: ["C#", ".NET Core e Framework", "Aplicações Windows", "RESTAPIs", "Azure Cloud", "Docker e Kubernetes", "CI/CD", "SQL e NoSQL", "OIDC", "Observabilidade"],
     image: "/team/atila-almeida.jpg",
   },
   {
@@ -78,8 +78,6 @@ const expertise = [
   "Microsserviços",
   "Big Data Analytics",
   "UX/UI Design",
-  "Blockchain",
-  "Internet das Coisas",
   "Machine Learning"
 ]
 

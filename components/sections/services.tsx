@@ -66,9 +66,9 @@ export function Services() {
                 <div className="w-12 h-12 bg-[#595956]/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#595956]/40 transition-colors">
                   <Lightbulb className="text-[#8C8C88] h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold text-[#F2F2F0] mb-2">Soluções para Startups</h3>
+                <h3 className="text-xl font-bold text-[#F2F2F0] mb-2">Arquitetura de Soluções</h3>
                 <p className="text-[#8C8C88] mb-4">
-                  Soluções especializadas para startups levarem ideias inovadoras ao mercado rapidamente.
+                  Projetamos arquiteturas escaláveis, seguras e resilientes para aplicações modernas em ambientes críticos.
                 </p>
               </CardContent>
             </Card>

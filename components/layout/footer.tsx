@@ -25,7 +25,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="#servicos" className="text-[#8C8C88] hover:text-[#F2F2F0] transition-colors">
-                  Soluções para Startups
+                  Arquitetura de Soluções
                 </Link>
               </li>
               <li>
