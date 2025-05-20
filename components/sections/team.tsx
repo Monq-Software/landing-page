@@ -91,8 +91,17 @@ const expertise = [
   "Microsserviços",
   "Big Data Analytics",
   "UX/UI Design",
-  "Machine Learning"
+  "Machine Learning",
+  "Análise de Vulnerabilidades",
+  "Resposta a Incidentes",
+  "Pentest e Red Teaming",
+  "Segurança em Nuvem",
+  "Gerenciamento de Identidade e Acesso (IAM)",
+  "Defesa Cibernética (Blue Team)",
+  "Zero Trust Architecture",
+  "Hardening de Sistemas"
 ]
+
 
 export function Team() {
   return (
@@ -181,13 +190,15 @@ export function Team() {
         >
           <div className="bg-[#0D0D0D] rounded-2xl overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
-              <div>
-                <h3 className="text-2xl font-bold text-[#F2F2F0] mb-4">Atuamos em diversas áreas</h3>
-                <p className="text-[#8C8C88] mb-6">
-                  Nossa equipe diversificada reúne experiência combinada em diversas áreas de software,
-                  permitindo que entreguemos soluções completas e integradas para qualquer desafio tecnológico.
-                </p>
-                <div className="grid grid-cols-2 gap-3 mt-6">
+              <div className="flex flex-col justify-">
+                <div>
+                  <h3 className="text-2xl font-bold text-[#F2F2F0] mb-4">Atuamos em diversas áreas</h3>
+                  <p className="text-[#8C8C88] text-xl mb-6">
+                    Nossa equipe diversificada reúne experiência combinada em diversas áreas de software,
+                    permitindo que entreguemos soluções completas e integradas para qualquer desafio tecnológico.
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 gap-5 mt-6">
                   {expertise.map((skill, index) => (
                     <motion.div
                       key={index}
@@ -197,14 +208,14 @@ export function Team() {
                       transition={{ delay: index * 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <Badge className="bg-[#595956]/20 text-[#8C8C88]">{skill}</Badge>
+                      <Badge className="bg-[#595956]/20 text-[#8C8C88] cursor-pointer">{skill}</Badge>
                     </motion.div>
                   ))}
                 </div>
               </div>
               <div className="flex justify-center items-center">
                 <Image
-                  src="assets/place-holder.png"
+                  src="assets/image-desc.jpg"
                   alt="Equipe MONQ Software"
                   width={500}
                   height={300}
